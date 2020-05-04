@@ -10,24 +10,30 @@ import { List, ListItem } from "../components/List";
 
 function Search() {
 
-
+    function loadBooks() {
+        API.getBooks()
+          .then(res => 
+            setBooks(res.data)
+          )
+          .catch(err => console.log(err));
+      };
 
     return (
       <Container fluid>
-        <row>
+        <Row>
          <Navbar></Navbar>
             <Jumbotron>
               <h1>Search for a Book</h1>
             </Jumbotron>
           
-        </row>
-        <row>
+        </Row>
+        <Row>
           <Jumbotron>
             <List>
 
             </List>
           </Jumbotron>
-        </row>
+        </Row>
       </Container>
 
     );

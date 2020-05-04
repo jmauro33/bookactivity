@@ -54,18 +54,20 @@ function Books() {
 
     return (
       <Container fluid>
-        <row>
+        <Row>
          <Navbar></Navbar>
             <Jumbotron>
               <h1>What Books Should I read</h1>
             </Jumbotron>
           
-        </row>
-        <row>
+        </Row>
+        <Row>
           <Jumbotron>
-            
+            <List>
+
+            </List>
           </Jumbotron>
-        </row>
+        </Row>
       </Container>
 
     );
