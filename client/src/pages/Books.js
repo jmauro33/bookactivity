@@ -55,7 +55,7 @@ function Books() {
     return (
       <Container fluid>
         <row>
-         
+         <Navbar></Navbar>
             <Jumbotron>
               <h1>What Books Should I read</h1>
             </Jumbotron>
