@@ -6,6 +6,7 @@ function Nav() {
       <a className="navbar-brand" href="/">
         Google Books Reading Reviewer
       </a>
+      
     </nav>
   );
 }
