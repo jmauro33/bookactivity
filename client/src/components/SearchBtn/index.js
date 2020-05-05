@@ -2,12 +2,12 @@ import React from "react";
 import "./style.css";
 
 
-function DeleteBtn(props) {
+function SearchBtn(props) {
   return (
-    <span className="delete-btn" {...props} role="button" tabIndex="0">
+    <span className="search-btn" {...props} role="button" tabIndex="0">
       Search
     </span>
   );
 }
 
-export default DeleteBtn;
+export default SearchBtn;
