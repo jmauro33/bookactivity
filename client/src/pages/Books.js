@@ -53,22 +53,24 @@ function Books() {
   };
 
     return (
+  
       <Container fluid>
-        <Row>
-         <Navbar></Navbar>
-            <Jumbotron>
-              <h1>What Books Should I read</h1>
-            </Jumbotron>
-          
-        </Row>
-        <Row>
+      <Row>
+       <Navbar></Navbar>
           <Jumbotron>
-            <List>
-
-            </List>
+            <h1>Search for a Book</h1>
+          
           </Jumbotron>
-        </Row>
-      </Container>
+        
+      </Row>
+      <Row>
+        <Jumbotron>
+          <List>
+          
+          </List>
+        </Jumbotron>
+      </Row>
+    </Container>
 
     );
   }

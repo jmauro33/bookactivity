@@ -8,10 +8,10 @@ function Navbar() {
       </a>
       <ul>
         <li>
-          <Link classname="nav-link" to= ".src/pages/search">search</Link>
+          
         </li>
         <li>
-          <Link classname="nav-link" to= ".src/pages/books">books</Link>
+          
         </li>
 
 
