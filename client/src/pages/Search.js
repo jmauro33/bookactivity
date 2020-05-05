@@ -24,13 +24,12 @@ function Search() {
           )
           .catch(err => console.log(err));
       };
-  function deleteBook(id) {
-    API.deleteBook(id)
-      .then(res => loadBooks())
-      .catch(err => console.log(err));
-  }
-
-  
+    function saveBook(){
+      API.saveBook()
+      .then(res =>
+          saveBooks(bookResults)
+      )
+    };
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({...formObject, [name]: value})
