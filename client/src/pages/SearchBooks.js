@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import List from "../components/List";
 import SearchForm from "../components/searchForm";
-
+import SearchResults from "../components/SearchResults";
 function Books() {
 
   
@@ -34,7 +34,7 @@ function Books() {
       </Container>
       <br></br>
       <Container>
-        <SearchResult books={this.state.books} handleSavedButton={this.handleSavedButton} />
+        <SearchResults books={this.state.books} handleSavedButton={this.handleSavedButton} />
       </Container>
     </Container>
 
