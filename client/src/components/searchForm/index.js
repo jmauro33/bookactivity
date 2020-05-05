@@ -15,7 +15,7 @@ const SearchForm = props => {
               />
           </div>
           <button type="submit" className="submitBtn btn btn-primary" onClick={props.handleFormSubmit}>
-              Submit your Search
+              Find Good Books
           </button>
       </form>
   )

@@ -14,7 +14,12 @@ function App() {
           <Route exact path={["/", "/SearchBooks"]}>
             <SearchBooks />
           </Route>
-        
+          <Route exact path={["/", "/SavedBooks"]}>
+            <SavedBooks />
+          </Route>
+          <Route exact path={["/", "/NoMatch"]}>
+            <NoMatch />
+          </Route>
         </Switch>
       </div>
     </Router>
