@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DeleteBtn from "../components/DeleteBtn";
+import SaveBtn from "../components/SaveBtn";
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import API from "../utils/API";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import List from "../components/List";
 import SearchForm from "../components/searchForm";
+import SearchBtn from "../components/SearchBtn";
 import SearchResults from "../components/SearchResults";
 function Books() {
 
@@ -18,23 +19,25 @@ function Books() {
         <Navbar></Navbar>
         <Jumbotron>
           <h1>Search for a Book</h1>
-
-        </Jumbotron>
-
-      
-      <Container>
+        <Container>
         <Row>
           <Col size="12">
             <SearchForm
               handleFormSubmit={this.handleFormSubmit}
               handleInputChange={this.handleInputChange}
             />
+            <SearchBtn></SearchBtn>
           </Col>
         </Row>
-      </Container>
+      </Container>  
+        </Jumbotron>
       <br></br>
       <Container>
+        <List></List>
+
         <SearchResults books={this.state.books} handleSavedButton={this.handleSavedButton} />
+        <SaveBtn></SaveBtn>
+
       </Container>
     </Container>
 

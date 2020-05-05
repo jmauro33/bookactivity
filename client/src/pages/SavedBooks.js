@@ -15,9 +15,11 @@ function SavedBooks() {
 
     return (
       <Container fluid className="container">
+        <Navbar></Navbar>
       <Jumbotron />
       <Container>
           <SavedResults savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
+          <DeleteBtn></DeleteBtn>
       </Container>
   </Container>
 
