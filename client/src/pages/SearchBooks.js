@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import SaveBtn from "../components/SaveBtn";
+import SavedBtn from "../components/SavedBtn";
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
-import List from "../components/List";
+
 import SearchForm from "../components/searchForm";
 import SearchBtn from "../components/SearchBtn";
 import SearchResults from "../components/SearchResults";
@@ -22,10 +22,9 @@ function Books() {
         <Container>
         <Row>
           <Col size="12">
-            <SearchForm
-              handleFormSubmit={this.handleFormSubmit}
-              handleInputChange={this.handleInputChange}
-            />
+            <SearchForm></SearchForm>
+            
+            
             <SearchBtn></SearchBtn>
           </Col>
         </Row>
@@ -33,10 +32,9 @@ function Books() {
         </Jumbotron>
       <br></br>
       <Container>
-        <List></List>
-        
+       
         <SearchResults books={this.state.books} handleSavedButton={this.handleSavedButton} />
-        <SaveBtn></SaveBtn>
+        <SavedBtn></SavedBtn>
 
       </Container>
     </Container>

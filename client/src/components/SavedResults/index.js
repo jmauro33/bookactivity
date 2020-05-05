@@ -7,10 +7,6 @@ return(
     <div>
 
 
-        <List>
-            
-        </List>
-
 
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 
-function SaveBtn(props) {
+function SavedBtn(props) {
   return (
     <span className="save-btn" {...props} role="button" tabIndex="0">
       Save 
@@ -10,4 +10,4 @@ function SaveBtn(props) {
   );
 }
 
-export default SaveBtn;
+export default SavedBtn;

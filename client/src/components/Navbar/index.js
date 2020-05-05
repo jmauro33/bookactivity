@@ -8,10 +8,10 @@ function Navbar() {
       </a>
       <ul>
         <li>
-        <Link></Link>
+       
         </li>
         <li>
-        <Link></Link> 
+    
         </li>
 
 
