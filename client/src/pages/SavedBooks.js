@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
-import Form from "../components/Form";
+import Form from "../components/searchForm";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
@@ -56,13 +56,6 @@ function Search() {
             <Form></Form>
             </Jumbotron>
           
-        </Row>
-        <Row>
-          <Jumbotron>
-            <List>
-            
-            </List>
-          </Jumbotron>
         </Row>
       </Container>
 
