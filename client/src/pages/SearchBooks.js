@@ -18,7 +18,7 @@ function Books() {
     
         <Navbar></Navbar>
         <Jumbotron>
-          <h1>Search for a Book</h1>
+          <h1>Search for a Good Book using the Google Books API</h1>
         <Container>
         <Row>
           <Col size="12">
