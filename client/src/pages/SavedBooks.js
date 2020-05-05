@@ -2,65 +2,27 @@ import React, { useState, useEffect } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
-import Form from "../components/searchForm";
+import SavedResults from "../components/SavedResults";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 
+function SavedBooks() {
 
-function Search() {
-    const [books, setBooks] = useState([])
-    const [formObject, setFormObject] = useState({})
-  
-   
-    useEffect(() => {
-      loadBooks()
-    }, [])
+  const [books, setBooks] = useState([])
+  const [formObject, setFormObject] = useState({})
 
-    function loadBooks() {
-        API.getBooks()
-          .then(res => 
-            setBooks(res.data)
-          )
-          .catch(err => console.log(err));
-      };
-    function saveBook(){
-      API.saveBook()
-      .then(res =>
-          saveBooks(bookResults)
-      )
-    };
-  function handleInputChange(event) {
-    const { name, value } = event.target;
-    setFormObject({...formObject, [name]: value})
-  };
-
- 
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    if (formObject.title && formObject.author) {
-      API.saveBook({
-       
-      })
-        .then(res => loadBooks())
-        .catch(err => console.log(err));
-    }
-  };
     return (
-      <Container fluid>
-        <Row>
-         <Navbar></Navbar>
-            <Jumbotron>
-              <h1>Search for a Book</h1>
-            <Form></Form>
-            </Jumbotron>
-          
-        </Row>
+      <Container fluid className="container">
+      <Jumbotron />
+      <Container>
+          <SavedResults savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
       </Container>
+  </Container>
 
     );
   }
 
 
-export default Search;
+export default SavedBooks;
