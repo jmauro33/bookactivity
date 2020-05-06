@@ -5,26 +5,34 @@ function SavedResults() {
 
     return (
 
-        <div>
-
-        <Row>
-            <div class="card">
-                <h5 class="card-header"></h5>
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-
-                </div>
-            </div>
-        </Row>
-        
+      <div>
 
 
+          <Row>
 
+          <div class="card">
+          <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Delete Book</a>
+              </div>
+          </div>
+
+          </Row>
 
 
 
-        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
     )
 }
 export default SavedResults;

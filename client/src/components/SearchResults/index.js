@@ -5,27 +5,19 @@ function SearchResults() {
 
     return (
 
-        <div>
-        <Row>
-            <div class="card">
-                <h5 class="card-header"></h5>
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
+<div>
 
+        <Row>
+
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Title of Book</h5>
+                    <p class="card-text">Author of Book</p>
+                    <p class="card-text">Summary of Book</p>
+                    <a href="#" class="btn btn-primary">Save Book</a>
                 </div>
             </div>
-        </Row>
-        <br></br>
-        <Row>
-            <div class="card">
-                <h5 class="card-header"></h5>
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
 
-                </div>
-            </div>
         </Row>
 
 
@@ -34,10 +26,9 @@ function SearchResults() {
 
 
 
-        </div>
 
 
-
+</div>
     )
 }
 export default SearchResults;
