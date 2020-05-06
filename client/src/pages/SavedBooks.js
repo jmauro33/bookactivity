@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DeleteBtn from "../components/DeleteBtn";
+
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import SavedResults from "../components/SavedResults";
@@ -16,7 +16,7 @@ function SavedBooks() {
       <Jumbotron />
       <Container>
           <SavedResults></SavedResults>
-          <DeleteBtn></DeleteBtn>
+        
       </Container>
   </Container>
 
