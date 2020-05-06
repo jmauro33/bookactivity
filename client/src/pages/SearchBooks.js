@@ -28,9 +28,9 @@ function Books() {
         </Jumbotron>
       <br></br>
       <Container>
-       
+       <Jumbotron>
         <SearchResults></SearchResults>
-      
+      </Jumbotron>
 
       </Container>
     </Container>
