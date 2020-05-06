@@ -11,7 +11,6 @@ import SearchBtn from "../components/SearchBtn";
 import SearchResults from "../components/SearchResults";
 function Books() {
 
-  
   return (
 
     <Container fluid>

@@ -10,8 +10,6 @@ import { Col, Row, Container } from "../components/Grid";
 
 function SavedBooks() {
 
- 
-
     return (
       <Container fluid className="container">
         <Navbar></Navbar>
