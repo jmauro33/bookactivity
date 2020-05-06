@@ -14,6 +14,7 @@ function Books() {
     <Container fluid>
     
         <Nav></Nav>
+
         <Jumbotron>
           <h1>Search for a Good Book using the Google Books API</h1>
         <Container>
@@ -21,8 +22,6 @@ function Books() {
           <Col size="12">
             <SearchForm></SearchForm>
             
-            
-           
           </Col>
         </Row>
       </Container>  

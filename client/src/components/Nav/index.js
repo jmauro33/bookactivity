@@ -2,7 +2,14 @@ import React from "react";
 
 function Nav() {
   return (
-     <div></div>
+    <ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Search</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Saved</a>
+  </li>
+</ul>
   );
 }
 

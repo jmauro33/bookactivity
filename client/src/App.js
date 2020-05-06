@@ -21,7 +21,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
-      </div>
+      </div>  
     </Router>
   );
 }
