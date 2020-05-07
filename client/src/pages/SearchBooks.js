@@ -21,6 +21,7 @@ function Books() {
     API.getBooks(searchTerm)
     .then(function(results){
     console.log(results);
+    
     setBookResults(results);
     
     })
