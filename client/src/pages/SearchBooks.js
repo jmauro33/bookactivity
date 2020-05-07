@@ -20,6 +20,7 @@ function Books() {
     .then(function(results){
     console.log(results);
     setBookResults(results);
+    
     })
   }
 
@@ -43,7 +44,9 @@ function Books() {
       <br></br>
       <Container>
         {bookResults && bookResults.map(book => {
-          return ( <SearchResults book = {book}></SearchResults> )
+          return ( <SearchResults book = {book}>
+            
+          </SearchResults> )
         })}
        
       </Container>
