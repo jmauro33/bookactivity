@@ -2,8 +2,8 @@ import axios from "axios";
 
 export default {
   
-  getBooks: function() {
-    return axios.get("/api/googlebooks");
+  getBooks: function(search) {
+    return axios.get("/api/googlebooks",{params:{q:"title:"+search}});
   },
   
   getBook: function(id) {

@@ -3,14 +3,16 @@ const axios = require ("axios");
 module.exports = {
     
     findBooks: function(req, res){
-        axios.get("https://www.googleapis.com/books/v1/volumes")
+        console.log(req.query);
+        axios.get("https://www.googleapis.com/books/v1/volumes",{params:req.query})
         .then(function(results){
            const bookResults = results.data.items.filter(function(item){
-                if(item.volumeInfo.title && items.volumeInfo.authors && items.volumeInfo.description)
+                if(item.volumeInfo.title && item.volumeInfo.authors && item.volumeInfo.description)
              return true
             })
         .map(function(results){
-            return {title:results.volumeInfo.title,authors:results.volumeInfo.authors,description:volumeInfo.description}
+            console.log(results);
+            return {title:results.volumeInfo.title,authors:results.volumeInfo.authors,description:results.volumeInfo.description}
         })
          res.json(bookResults);
         })
