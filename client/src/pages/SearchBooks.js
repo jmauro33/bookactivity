@@ -9,8 +9,10 @@ import SearchResults from "../components/SearchResults";
 function Books() {
   const [searchTerm,setSearchTerm]= useState("");
   const [bookResults,setBookResults] =useState([]);
+
+
   const handleInputChange = (event) => {
-    //console.log(event.target.value);
+    console.log(event.target.value);
     setSearchTerm(event.target.value);
   }
   const handleFormSubmit = (event) => {
@@ -44,7 +46,7 @@ function Books() {
       <br></br>
       <Container>
         {bookResults && bookResults.map(book => {
-          return ( <SearchResults book = {book}>
+          return ( <SearchResults book = {this.state.book}>
             
           </SearchResults> )
         })}
