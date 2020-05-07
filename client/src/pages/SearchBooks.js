@@ -7,8 +7,8 @@ import SearchForm from "../components/searchForm";
 import SearchResults from "../components/SearchResults";
 
 function Books() {
-  const [searchTerm,setSearchTerm]= useState("");
-  const [bookResults,setBookResults] =useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [bookResults, setBookResults] = useState([]);
 
 
   const handleInputChange = (event) => {
@@ -20,9 +20,9 @@ function Books() {
     console.log(searchTerm);
     API.getBooks(searchTerm)
     .then(function(results){
-    console.log(results);
+    console.log('THIS IS THE RESULT:', typeof(results), results);
     
-    setBookResults(results);
+    setBookResults(results.data);
     
     })
   }
@@ -46,8 +46,8 @@ function Books() {
         </Jumbotron>
       <br></br>
       <Container>
-        {bookResults && bookResults.map(book => {
-          return ( <SearchResults book = {this.state.book}>
+        { bookResults && bookResults.map(book => {
+          return ( <SearchResults book={ book } key={ book.title }>
             
           </SearchResults> )
         })}

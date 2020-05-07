@@ -9,11 +9,11 @@ function SearchResults(props) {
 
         <Row>
 
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">{props.book.title}</h5>
-                    <p class="card-text">{props.book.author}</p>
-                    <p class="card-text">{props.book.description}</p>
+            <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">{props.book.title}</h5>
+                    <p className="card-text">{props.book.author}</p>
+                    <p className="card-text">{props.book.description}</p>
                     <a href="#" class="btn btn-primary">Save Book</a>
                 </div>
             </div>
